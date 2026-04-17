@@ -8,6 +8,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
 }
+
 header {
   height: min-content;
   background-color: var(--color-head-bg);

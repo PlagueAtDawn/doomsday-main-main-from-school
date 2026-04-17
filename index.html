@@ -1,70 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <title>Emergency Site</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/burger.css">
-  <link rel="stylesheet" href="css/cards.css">
-  <link rel="icon" type="image/png" href="img/fav.png">
-  <title>Emergency Site</title>
-</head>
+  <body id="frontpage">
+    <header>
+      <nav>
+        <div id="logotype-wrapper" class="logo">
+          <a href="index.html"> LOGO-TYPE </a>
+        </div>
 
-<body id="frontpage">
-  <header>
+        <ul class="menu">
+          <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
+          <li><a class="menuItem" href="register.html">Indberet</a></li>
+        </ul>
+        <button id="darkmode">Dark mode</button>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+    </header>
 
-    <nav>
-      <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
-      </div>
+    <main>
+    <article class="news_card">
+  <h3>Breaking news - Big snake with horns seen in central europe</h3>
+  <p>Læs mere om denne vigtige nyhed.</p>
+  <button popovertarget="news_popover">Læs mere</button>
 
-      <ul class="menu">
+  <!-- Nyheden -->
+  <div id="news_popover" popover>
+    <button popovertarget="news_popover">Luk</button>
+    <h3>Large snake with horns seen in Austria and Germany.</h4>
+    <time class="newsDate">16. April 2026 – KL. 20:14</time>
+    <img class="snake_pic" id="snake" src="pictures/horned-viper2-1024x535.jpg" alt="horned_snake" />
+    <p>
+      Multiple pictures have been circulating around on social media. Many are claiming they are fake and others are believing they are real or have said in comments they have seen it too. In this day and age everyone is very sceptical about what they see online.
+    </p>
+  </div>
+</article>
+        
+    </main>
 
-        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
-      </ul>
-      <button id="darkmode">Dark mode</button>
-      <button class="burger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
-    </nav>
-  </header>
-
-  <main>
-
-  </main>
-
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-      </ul>
-    </nav>
-  </footer>
-  <script src="js/main.js"></script>
-  <script src="js/darkmode.js"></script>
-  <script src="js/burger.js"></script>
-</body>
-
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/burger.js"></script>
+  </body>
 </html>
